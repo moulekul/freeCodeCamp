@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>Sport Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+   <h1 id="title">Sport Survey Form</h1>
+   <p id="description">Thank you for taking the time to complete this form.</p>
+
+    <form id="survey-form">
+          <fieldset>
+            <fieldset>
+      <label for="name" id="name-label">*Name: <input id="name" type="text" required name="name" placeholder="Enter Your Name"></label>
+      <label for="email" id="email-label">*Email: <input id="email" type="email" required name="email" placeholder="Enter Your Email"></label>
+      <label for="number" id="number-label">Age (optional): <input id="number" type="number" name="number" placeholder="Age" pattern="[0-9]" min="13" max="120"></label>
+            </fieldset>
+
+          <fieldset>
+      <label for="dropdown">Select the sport you most prefer from the following options:
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Football</option>
+          <option value="2">Rugby</option>
+          <option value="3">Hockey</option>
+          <option value="4">Cricket</option>
+          <option value="5">Athletics</option>
+          <option value="6">Martial Arts</option>
+          <option value="7">Weightlifting</option>
+          <option value="8">Other</option>
+        </select>
+      </label>
+
+ <label for="yes-no-label">Do you play this sport?
+      <label for="yes" id="yes-no-label"><input id="yes" type="radio" name="yes-no" value="1" class="inline" /> Yes</label>
+      <label for="no" id="yes-no-label"><input id="no" type="radio" name="yes-no" value="2" class="inline" /> No</label>
+</label>
+
+      <label for="checkbox-list">What do you enjoy about this sport? (Check all that apply)
+        <label for="checkbox1" id="checkbox-list"><input id="checkbox1" type="checkbox" value="1">Teamwork</label>
+        <label for="checkbox2" id="checkbox-list"><input id="checkbox2" type="checkbox" value="2">Competitiveness</label>
+        <label for="checkbox3" id="checkbox-list"><input id="checkbox3" type="checkbox" value="3">Entertainment</label>
+        <label for="checkbox4" id="checkbox-list"><input id="checkbox4" type="checkbox" value="4">Winning</label>
+        <label for="checkbox5" id="checkbox-list"><input id="checkbox5" type="checkbox" value="5">Skill</label>
+        <label for="checkbox6" id="checkbox-list"><input id="checkbox6" type="checkbox" value="6">Physicality</label>
+      </label>
+</fieldset>
+
+	<label for="comments">Any comments/suggestions/feedback?
+    <textarea id="comments" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+  </label>
+
+          <p class="red">*required field</p>
+          	<input id="submit" type="submit" value="Submit"/>
+</fieldset>
+    </form>
+    <h5>&copy; Copyright 02 April 2023, Luke Moule </h5>
+  </body>
+
+</html>
